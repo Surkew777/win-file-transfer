@@ -1,0 +1,24 @@
+# Step 1: Verify Username and Password
+# Double-check that the username and password are correct.
+# Make sure the account has the necessary permissions.
+git push
+
+# Step 2: Personal Access Token (Preferred Method)
+# Generate a Personal Access Token (PAT) with 'repo' scope on GitHub.
+# Use the token as your password for pushing.
+git push https://<username>:<token>@github.com/<username>/<repository>.git
+
+# Step 3: SSH Authentication (Alternative Method)
+# Set up SSH keys and add your public key to your GitHub account.
+# Update the remote URL to use the SSH URL.
+git remote set-url origin git@github.com:<username>/<repository>.git
+
+# Step 4: Repository Permissions
+# Ensure your GitHub account has write permissions to the repository.
+# Check this on the GitHub repository settings under "Manage access."
+
+# Step 5: Two-Factor Authentication (2FA)
+# If you have 2FA enabled, use a Personal Access Token instead of a password.
+
+# After trying the steps above, attempt the git push again.
+git push
